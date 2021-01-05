@@ -2952,6 +2952,12 @@
   <LocaleResource Name="Admin.Catalog.Products.Fields.IsRental.Hint">
     <Value>Check if this is a rental product (price is set for some period). Please note that inventory management is not fully supported for rental products yet. It's recommended to set 'Manage inventory method' to 'Don't track inventory' now.</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.ShowManufacturers">
+    <Value>Show manufacturers</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.ShowManufacturers.Hint">
+    <Value>Check to show manufacturers in details product page.</Value>
+  </LocaleResource>  
   <LocaleResource Name="Admin.Catalog.Products.Fields.IsShipEnabled">
     <Value>Shipping enabled</Value>
   </LocaleResource>

@@ -50,6 +50,7 @@ namespace Nop.Web.Models.Catalog
         public bool ShowSku { get; set; }
         public string Sku { get; set; }
 
+        public bool ShowManufacturers { get; set; }
         public bool ShowManufacturerPartNumber { get; set; }
         public string ManufacturerPartNumber { get; set; }
 
@@ -70,7 +71,7 @@ namespace Nop.Web.Models.Catalog
 
         public bool IsRental { get; set; }
         public DateTime? RentalStartDate { get; set; }
-        public DateTime? RentalEndDate { get; set; }
+        public DateTime? RentalEndDate { get; set; }        
 
         public DateTime? AvailableEndDate { get; set; }
 

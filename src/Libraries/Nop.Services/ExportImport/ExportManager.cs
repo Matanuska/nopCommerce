@@ -935,6 +935,7 @@ namespace Nop.Services.ExportImport
                 await xmlWriter.WriteStringAsync("RecurringCyclePeriodId", product.RecurringCyclePeriodId, await IgnoreExportProductPropertyAsync(p => p.RecurringProduct));
                 await xmlWriter.WriteStringAsync("RecurringTotalCycles", product.RecurringTotalCycles, await IgnoreExportProductPropertyAsync(p => p.RecurringProduct));
                 await xmlWriter.WriteStringAsync("IsRental", product.IsRental, await IgnoreExportProductPropertyAsync(p => p.IsRental));
+                await xmlWriter.WriteStringAsync("ShowManufacturers", product.ShowManufacturers, await IgnoreExportProductPropertyAsync(p => p.ShowManufacturers));
                 await xmlWriter.WriteStringAsync("RentalPriceLength", product.RentalPriceLength, await IgnoreExportProductPropertyAsync(p => p.IsRental));
                 await xmlWriter.WriteStringAsync("RentalPricePeriodId", product.RentalPricePeriodId, await IgnoreExportProductPropertyAsync(p => p.IsRental));
                 await xmlWriter.WriteStringAsync("IsShipEnabled", product.IsShipEnabled);
@@ -1268,6 +1269,8 @@ namespace Nop.Services.ExportImport
                 },
                 new PropertyByName<Product>("RecurringTotalCycles", p => p.RecurringTotalCycles, await IgnoreExportProductPropertyAsync(p => p.RecurringProduct)),
                 new PropertyByName<Product>("IsRental", p => p.IsRental, await IgnoreExportProductPropertyAsync(p => p.IsRental)),
+                new PropertyByName<Product>("ShowManufacturers", p => p.ShowManufacturers, await IgnoreExportProductPropertyAsync(p => p.ShowManufacturers)),
+
                 new PropertyByName<Product>("RentalPriceLength", p => p.RentalPriceLength, await IgnoreExportProductPropertyAsync(p => p.IsRental)),
                 new PropertyByName<Product>("RentalPricePeriod", p => p.RentalPricePeriodId, await IgnoreExportProductPropertyAsync(p => p.IsRental))
                 {

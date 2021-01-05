@@ -1171,6 +1171,7 @@ namespace Nop.Web.Factories
                     SeName = await _urlRecordService.GetSeNameAsync(product),
                     Sku = product.Sku,
                     ProductType = product.ProductType,
+                    ShowManufacturers = product.ShowManufacturers,
                     MarkAsNew = product.MarkAsNew &&
                         (!product.MarkAsNewStartDateTimeUtc.HasValue || product.MarkAsNewStartDateTimeUtc.Value < DateTime.UtcNow) &&
                         (!product.MarkAsNewEndDateTimeUtc.HasValue || product.MarkAsNewEndDateTimeUtc.Value > DateTime.UtcNow)
@@ -1235,6 +1236,7 @@ namespace Nop.Web.Factories
                 ManufacturerPartNumber = product.ManufacturerPartNumber,
                 ShowGtin = _catalogSettings.ShowGtin,
                 Gtin = product.Gtin,
+                ShowManufacturers = product.ShowManufacturers,
                 ManageInventoryMethod = product.ManageInventoryMethod,
                 StockAvailability = await _productService.FormatStockMessageAsync(product, string.Empty),
                 HasSampleDownload = product.IsDownload && product.HasSampleDownload,

@@ -26,6 +26,8 @@ namespace Nop.Web.Models.Catalog
 
         public bool MarkAsNew { get; set; }
 
+        public bool ShowManufacturers { get; set; }
+
         //price
         public ProductPriceModel ProductPrice { get; set; }
         //picture
@@ -56,6 +58,8 @@ namespace Nop.Web.Models.Catalog
             public DateTime? PreOrderAvailabilityStartDateTimeUtc { get; set; }
 
             public bool IsRental { get; set; }
+
+            public bool ShowManufacturers { get; set; }
 
             public bool ForceRedirectionAfterAddingToCart { get; set; }
 

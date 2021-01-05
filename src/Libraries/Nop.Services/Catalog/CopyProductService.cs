@@ -647,6 +647,7 @@ namespace Nop.Services.Catalog
                 RecurringCyclePeriod = product.RecurringCyclePeriod,
                 RecurringTotalCycles = product.RecurringTotalCycles,
                 IsRental = product.IsRental,
+                ShowManufacturers = product.ShowManufacturers,
                 RentalPriceLength = product.RentalPriceLength,
                 RentalPricePeriod = product.RentalPricePeriod,
                 IsShipEnabled = product.IsShipEnabled,

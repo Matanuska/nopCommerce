@@ -142,6 +142,8 @@ namespace Nop.Core.Domain.Catalog
         /// </summary>
         public bool IsRental { get; set; }
 
+
+
         /// <summary>
         /// Gets or sets a value indicating whether 'Free shipping' field is shown
         /// </summary>
@@ -266,7 +268,9 @@ namespace Nop.Core.Domain.Catalog
         /// Gets or sets a value indicating whether 'Published' field is shown
         /// </summary>
         public bool Published { get; set; }
-        
+
+        public bool ShowManufacturers { get; set; }
+
         /// <summary>
         /// Gets or sets a value indicating whether 'Related products' block is shown
         /// </summary>

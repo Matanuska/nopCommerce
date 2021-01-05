@@ -205,6 +205,9 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.IsRental")]
         public bool IsRental { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.ShowManufacturers")]
+        public bool ShowManufacturers { get; set; }
+
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.RentalPriceLength")]
         public int RentalPriceLength { get; set; }
 

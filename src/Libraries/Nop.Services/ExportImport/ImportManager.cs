@@ -1397,6 +1397,9 @@ namespace Nop.Services.ExportImport
                         case "IsRental":
                             product.IsRental = property.BooleanValue;
                             break;
+                        case "ShowManufacturers":
+                            product.ShowManufacturers = property.BooleanValue;
+                            break;
                         case "RentalPriceLength":
                             product.RentalPriceLength = property.IntValue;
                             break;

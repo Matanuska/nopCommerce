@@ -165,6 +165,9 @@ namespace Nop.Web.Areas.Admin.Models.Settings
         [NopResourceDisplayName("Admin.Configuration.Settings.ProductEditor.MarkAsNew")]
         public bool MarkAsNew { get; set; }
 
+        [NopResourceDisplayName("Admin.Configuration.Settings.ProductEditor.ShowManufacturers")]
+        public bool ShowManufacturers { get; set; }
+
         [NopResourceDisplayName("Admin.Configuration.Settings.ProductEditor.Published")]
         public bool Published { get; set; }
         

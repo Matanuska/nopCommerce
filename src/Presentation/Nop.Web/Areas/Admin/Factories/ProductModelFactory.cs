@@ -831,6 +831,7 @@ namespace Nop.Web.Areas.Admin.Factories
                 model.TaxCategoryId = _taxSettings.DefaultTaxCategoryId;
                 model.UnlimitedDownloads = true;
                 model.IsShipEnabled = true;
+                model.ShowManufacturers = true;
                 model.AllowCustomerReviews = true;
                 model.Published = true;
                 model.VisibleIndividually = true;

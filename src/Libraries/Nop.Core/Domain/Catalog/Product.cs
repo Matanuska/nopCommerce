@@ -235,6 +235,8 @@ namespace Nop.Core.Domain.Catalog
         /// </summary>
         public bool IsRental { get; set; }
 
+
+
         /// <summary>
         /// Gets or sets the rental length for some period (price for this period)
         /// </summary>
@@ -525,6 +527,8 @@ namespace Nop.Core.Domain.Catalog
         /// Gets or sets a value indicating whether the entity is published
         /// </summary>
         public bool Published { get; set; }
+
+        public bool ShowManufacturers { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the entity has been deleted
